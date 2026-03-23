@@ -1,0 +1,21 @@
+cat >> .gitignore << 'EOF'
+
+# MLX / Mac specific
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.env
+wandb/
+
+# Large files — use HuggingFace Hub instead
+adapters/*/
+data/raw/
+logs/
+
+# Python env
+.venv/
+*.egg-info/
+dist/
+build/
+EOF
